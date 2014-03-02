@@ -2,15 +2,29 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myRecipes', [
+angular.module('tvtrack', [
   'ngRoute',
-  'myRecipes.filters',
-  'myRecipes.services',
-  'myRecipes.directives',
-  'myRecipes.controllers'
+  'tvtrack.filters',
+  'tvtrack.services',
+  'tvtrack.directives',
+  'tvtrack.controllers',
+  'ui.bootstrap'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/'});
+  $routeProvider.when('/myshows', {
+  	templateUrl: 'partials/myshows.html',
+  	controller: 'MyShowsController',
+  	resolve: {
+  		'showsFactoryData': function(showsFactory){
+  			return showsFactory.promise;
+  		}
+  	}
+  });
+  $routeProvider.when('/view2', {
+  	templateUrl: 'partials/partial2.html', 
+  	controller: 'MyCtrl2'
+  });
+  $routeProvider.otherwise({
+  	redirectTo: '/myshows'
+  });
 }]);

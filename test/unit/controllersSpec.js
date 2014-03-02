@@ -3,7 +3,7 @@
 /* jasmine specs for controllers go here */
 
 describe('controllers', function(){
-  beforeEach(module('myRecipes.controllers'));
+  beforeEach(module('tvtrack.controllers'));
 
 
   it('should ....', inject(function() {

@@ -2,9 +2,9 @@
 
 /* Controllers */
 
-angular.module('myRecipes.controllers', []).
-  controller('MyCtrl1', [function() {
-
+angular.module('tvtrack.controllers', [])
+  .controller('MyShowsController', ['$scope', 'showsFactory', function($scope, showsFactory) {
+  	$scope.shows = showsFactory.getFollowed();
   }])
   .controller('MyCtrl2', [function() {
 

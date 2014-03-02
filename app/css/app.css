@@ -28,3 +28,51 @@
   content: "";
   padding: 0;
 }
+
+/* main-content */
+
+
+/* Show Thumbs */
+.show-thumbs {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.show-thumb {
+  display: inline-block;
+  width: 200px;
+  height: 302px;
+  margin: 20px;
+  padding: 20px 0px 12px;
+
+  background-color: #eee;
+  text-align: center;
+  overflow: hidden;
+}
+.show-thumb img {
+  width: 150px;
+  margin: 0 auto;
+}
+.show-thumb .title {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.show-thumb .next-episode {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  height: 32px;
+  overflow: hidden;
+}
+.show-thumb.add-show {
+  opacity: 0.5;
+  filter: alpha(opacity = 0.5);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+}
+.show-thumb.add-show:hover {
+  opacity: 1;
+  filter: alpha(opacity = 1);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
+}

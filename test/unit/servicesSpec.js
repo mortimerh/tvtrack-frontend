@@ -3,7 +3,7 @@
 /* jasmine specs for services go here */
 
 describe('service', function() {
-  beforeEach(module('myRecipes.services'));
+  beforeEach(module('tvtrack.services'));
 
 
   describe('version', function() {
