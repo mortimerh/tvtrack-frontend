@@ -49,6 +49,30 @@
   text-align: center;
   overflow: hidden;
 }
+.show-thumb:hover img {
+  opacity: 0.3;
+  filter: alpha(opacity = 0.3);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.3);
+}
+.show-thumb:hover .watched {
+  visibility: visible;
+  text-decoration: none;
+}
+.show-thumb .watched {
+  visibility: hidden;
+  position: relative;
+  top: -110px;
+  display: block;
+  height: 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.show-thumb .watched .glyphicon {
+  display: block;
+  font-size: 52px;
+  line-height: 52px;
+}
 .show-thumb img {
   width: 150px;
   margin: 0 auto;
@@ -66,13 +90,16 @@
   height: 32px;
   overflow: hidden;
 }
-.show-thumb.add-show {
+.show-thumb.add-show img, .show-thumb.add-show .title{
   opacity: 0.5;
   filter: alpha(opacity = 0.5);
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
 }
-.show-thumb.add-show:hover {
+.show-thumb.add-show:hover img, .show-thumb.add-show:hover .title{
   opacity: 1;
   filter: alpha(opacity = 1);
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
+}
+.show-thumb.add-show:hover img {
+  cursor: pointer;
 }

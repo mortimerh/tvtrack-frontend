@@ -1,12 +1,17 @@
 <div class="show-thumbs">
 	<div class="show-thumb" ng-repeat="show in shows">
-		<img ng-src="{{show.image}}&text={{show.name}}">
-		<span class="title">{{show.name}}</span>
-		<span class="next-episode">{{show.nextEpisode}}</span>
+		<img ng-src="{{show.image}}" class="img-rounded">
+		<a href="#" class="watched">
+			<span class="glyphicon glyphicon-eye-open"></span>Seen it
+		</a>
+		<a href="#"
+			<span class="title">{{show.name}} - {{show.number}}</span>
+			<span class="next-episode">{{show.nextEpisode}}</span>
+		</a>
 	</div>
 	<div class="show-thumb add-show">
-		<img ng-src="http://placehold.it/150x210&text=add">
-		<span class="title">Add show</span><br />
+		<img ng-src="http://placehold.it/150x210/119911/FFFFFF&text=add" class="img-rounded">
+		<a href="#"><span class="title">Add show</span></a>
 
 	</div>
 </div>

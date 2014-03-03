@@ -2,7 +2,7 @@
   {
       "id": 0,
       "name": "Enjola",
-      "image": "http://placehold.it/150x210",
+      "image": "http://lorempixel.com/150/210/food",
       "following": false,
       "number": "S07E02",
       "nextEpisode": "irure quis non"
@@ -10,7 +10,7 @@
   {
       "id": 1,
       "name": "Flumbo",
-      "image": "http://placehold.it/150x210",
+      "image": "http://lorempixel.com/150/210/fashion",
       "following": true,
       "number": "S07E21",
       "nextEpisode": "Dulce et decorum est pro patri mori. Eu laborum pariatur"
@@ -18,7 +18,7 @@
   {
       "id": 2,
       "name": "Eyeris",
-      "image": "http://placehold.it/150x210",
+      "image": "http://lorempixel.com/150/210/nightlife",
       "following": true,
       "number": "S04E12",
       "nextEpisode": "mollit ex magna"
@@ -26,7 +26,7 @@
   {
       "id": 3,
       "name": "Isoplex",
-      "image": "http://placehold.it/150x210",
+      "image": "http://lorempixel.com/150/210/transport",
       "following": true,
       "number": "S02E15",
       "nextEpisode": "dolor occaecat commodo"
@@ -34,7 +34,7 @@
   {
       "id": 4,
       "name": "Acrodance",
-      "image": "http://placehold.it/150x210",
+      "image": "http://lorempixel.com/150/210/sports",
       "following": true,
       "number": "S04E14",
       "nextEpisode": "id commodo pariatur"
@@ -42,15 +42,15 @@
   {
       "id": 5,
       "name": "Futuris",
-      "image": "http://placehold.it/150x210",
-      "following": false,
+      "image": "http://lorempixel.com/150/210/people",
+      "following": true,
       "number": "S02E21",
       "nextEpisode": "culpa officia est"
   },
   {
       "id": 6,
       "name": "Schoolio",
-      "image": "http://placehold.it/150x210",
+      "image": "http://lorempixel.com/150/210/business",
       "following": true,
       "number": "S07E18",
       "nextEpisode": "labore eu enim"
